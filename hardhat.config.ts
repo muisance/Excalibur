@@ -7,8 +7,8 @@ import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
-require('@openzeppelin/hardhat-upgrades');
-require('hardhat-contract-sizer');
+import '@openzeppelin/hardhat-upgrades';
+import 'hardhat-contract-sizer';
 
 dotenv.config();
 
@@ -88,6 +88,10 @@ const config = {
       url: process.env.OP_TEST_RPC || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    mainnet: {
+      url: "https://mainnet.boba.network/",
+      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
 
   },
   gasReporter: {
@@ -103,7 +107,6 @@ const config = {
       optimisticKovan: process.env.ETHERSCAN_API_KEY_OP,
     }    
   },
-
 };
 
 export default config;

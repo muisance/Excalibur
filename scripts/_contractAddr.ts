@@ -1,5 +1,13 @@
 //Track Addresses (Fill in present addresses to prevent new deplopyment)
 const contractAddr: any = {
+  mainnet: {
+    config: "0x2e4add4a7529af8f529762f0eedca5e6811ee07a",
+    game: undefined,
+    reaction: undefined,
+    hub: undefined,
+    avatar: undefined,
+    history: undefined,
+  },
   rinkeby: {
       config:"0xA888d7f44638AEEBA9048Ca08bCF83a23e9f58dc",  //D2.1
       game:"0x4650e8FC59AbfD38B90712501225Fd19562C97AC",  //D2.91

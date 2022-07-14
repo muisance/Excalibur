@@ -5,8 +5,8 @@
 // Runtime Environment's members available in the global scope.
 import { ethers } from "hardhat";
 import { verify } from "../utils/deployment";
-const { upgrades } = require("hardhat");
-const hre = require("hardhat");
+import { upgrades } from "hardhat";
+import hre from "hardhat";
 const chain = hre.hardhatArguments.network;
 
 //Track Addresses (Fill in present addresses to prevent new deplopyment)
