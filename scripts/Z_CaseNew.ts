@@ -4,8 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 
-import { ethers } from "hardhat";
-const {  upgrades } = require("hardhat");
+import { ethers, upgrades } from "hardhat";
 
 // import publicAddr from "./_publicAddrs";
 // import contractAddr from "./_contractAddr";
@@ -19,11 +18,13 @@ async function main() {
 
     //Jurisdiction
     // let jurisdictionContract = await ethers.getContractFactory("JurisdictionUpgradable").then(res => res.attach("0x688600ad8896e30270c5d24f30590792f48b0627"));
-    let jurisdictionContract = await ethers.getContractFactory("JurisdictionUpgradable").then(res => res.attach("0xd474f8655dd1bc1f9d8f78dbec24149a2755da5e"));
+    let jurisdictionContract = await ethers.getContractFactory("JurisdictionUpgradable")
+    .then(res => res.attach("0xd474f8655dd1bc1f9d8f78dbec24149a2755da5e"));
     
 
     let rolehas = await jurisdictionContract.roleHas("0xE1a71E7cCCCc9D06f8bf1CcA3f236C0D04Da741B", "member");
     console.log("Account roleHas Member:", rolehas);
+    
     let targetContract = await jurisdictionContract.getTargetContract()
     console.log("targetContract:", targetContract);
 

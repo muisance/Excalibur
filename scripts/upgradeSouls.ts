@@ -5,8 +5,9 @@
 // Runtime Environment's members available in the global scope.
 
 // import { ethers } from "hardhat";
-const { ethers, upgrades } = require("hardhat");
+import { ethers, upgrades } from "hardhat";
 import contractAddr from "./_contractAddr";
+
 const proxyAddress = contractAddr.hub;
 
 

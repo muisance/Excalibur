@@ -37,21 +37,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.UUPSUpgradeable__factory>;
     getContractFactory(
-      name: "ERC1155Upgradeable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC1155Upgradeable__factory>;
-    getContractFactory(
-      name: "IERC1155MetadataURIUpgradeable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155MetadataURIUpgradeable__factory>;
-    getContractFactory(
       name: "IERC1155ReceiverUpgradeable",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC1155ReceiverUpgradeable__factory>;
-    getContractFactory(
-      name: "IERC1155Upgradeable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155Upgradeable__factory>;
     getContractFactory(
       name: "ERC721Upgradeable",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -113,41 +101,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Proxy__factory>;
     getContractFactory(
-      name: "ERC1155",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC1155__factory>;
-    getContractFactory(
-      name: "IERC1155MetadataURI",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155MetadataURI__factory>;
-    getContractFactory(
-      name: "IERC1155",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155__factory>;
-    getContractFactory(
-      name: "IERC1155Receiver",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155Receiver__factory>;
-    getContractFactory(
-      name: "ERC721",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC721__factory>;
-    getContractFactory(
-      name: "ERC721URIStorage",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC721URIStorage__factory>;
-    getContractFactory(
-      name: "IERC721Metadata",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC721Metadata__factory>;
-    getContractFactory(
       name: "IERC721",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC721__factory>;
-    getContractFactory(
-      name: "IERC721Receiver",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC721Receiver__factory>;
     getContractFactory(
       name: "ERC165",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -173,17 +129,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ContractBase__factory>;
     getContractFactory(
-      name: "ERC1155GUID",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC1155GUID__factory>;
-    getContractFactory(
       name: "ERC1155GUIDTrackerUp",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.ERC1155GUIDTrackerUp__factory>;
-    getContractFactory(
-      name: "ERC1155GUIDUpgradable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC1155GUIDUpgradable__factory>;
     getContractFactory(
       name: "ERC1155RolesTrackerUp",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -209,17 +157,9 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Rules__factory>;
     getContractFactory(
-      name: "ActionRepo",
+      name: "ActionRepoTrackerUp",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ActionRepo__factory>;
-    getContractFactory(
-      name: "ActionRepoUpgradable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ActionRepoUpgradable__factory>;
-    getContractFactory(
-      name: "AvatarNFT",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.AvatarNFT__factory>;
+    ): Promise<Contracts.ActionRepoTrackerUp__factory>;
     getContractFactory(
       name: "CaseUpgradable",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -228,10 +168,6 @@ declare module "hardhat/types/runtime" {
       name: "Config",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Config__factory>;
-    getContractFactory(
-      name: "Hub",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Hub__factory>;
     getContractFactory(
       name: "HubUpgradable",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -269,13 +205,13 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IContractBase__factory>;
     getContractFactory(
-      name: "IERC1155GUID",
+      name: "IERC1155GUIDTracker",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155GUID__factory>;
+    ): Promise<Contracts.IERC1155GUIDTracker__factory>;
     getContractFactory(
-      name: "IERC1155Roles",
+      name: "IERC1155RolesTracker",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC1155Roles__factory>;
+    ): Promise<Contracts.IERC1155RolesTracker__factory>;
     getContractFactory(
       name: "IERC1155Tracker",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -321,6 +257,22 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.AssocRepo__factory>;
     getContractFactory(
+      name: "IBoolStore",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IBoolStore__factory>;
+    getContractFactory(
+      name: "IOpenRepo",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IOpenRepo__factory>;
+    getContractFactory(
+      name: "IStringStore",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.IStringStore__factory>;
+    getContractFactory(
+      name: "OpenRepoUpgradable",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.OpenRepoUpgradable__factory>;
+    getContractFactory(
       name: "SoulUpgradable",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.SoulUpgradable__factory>;
@@ -356,25 +308,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.UUPSUpgradeable>;
     getContractAt(
-      name: "ERC1155Upgradeable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC1155Upgradeable>;
-    getContractAt(
-      name: "IERC1155MetadataURIUpgradeable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155MetadataURIUpgradeable>;
-    getContractAt(
       name: "IERC1155ReceiverUpgradeable",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IERC1155ReceiverUpgradeable>;
-    getContractAt(
-      name: "IERC1155Upgradeable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155Upgradeable>;
     getContractAt(
       name: "ERC721Upgradeable",
       address: string,
@@ -451,50 +388,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Proxy>;
     getContractAt(
-      name: "ERC1155",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC1155>;
-    getContractAt(
-      name: "IERC1155MetadataURI",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155MetadataURI>;
-    getContractAt(
-      name: "IERC1155",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155>;
-    getContractAt(
-      name: "IERC1155Receiver",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155Receiver>;
-    getContractAt(
-      name: "ERC721",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC721>;
-    getContractAt(
-      name: "ERC721URIStorage",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC721URIStorage>;
-    getContractAt(
-      name: "IERC721Metadata",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC721Metadata>;
-    getContractAt(
       name: "IERC721",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IERC721>;
-    getContractAt(
-      name: "IERC721Receiver",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC721Receiver>;
     getContractAt(
       name: "ERC165",
       address: string,
@@ -526,20 +423,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.ContractBase>;
     getContractAt(
-      name: "ERC1155GUID",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC1155GUID>;
-    getContractAt(
       name: "ERC1155GUIDTrackerUp",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.ERC1155GUIDTrackerUp>;
-    getContractAt(
-      name: "ERC1155GUIDUpgradable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC1155GUIDUpgradable>;
     getContractAt(
       name: "ERC1155RolesTrackerUp",
       address: string,
@@ -571,20 +458,10 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.Rules>;
     getContractAt(
-      name: "ActionRepo",
+      name: "ActionRepoTrackerUp",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.ActionRepo>;
-    getContractAt(
-      name: "ActionRepoUpgradable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ActionRepoUpgradable>;
-    getContractAt(
-      name: "AvatarNFT",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.AvatarNFT>;
+    ): Promise<Contracts.ActionRepoTrackerUp>;
     getContractAt(
       name: "CaseUpgradable",
       address: string,
@@ -595,11 +472,6 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Config>;
-    getContractAt(
-      name: "Hub",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.Hub>;
     getContractAt(
       name: "HubUpgradable",
       address: string,
@@ -646,15 +518,15 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IContractBase>;
     getContractAt(
-      name: "IERC1155GUID",
+      name: "IERC1155GUIDTracker",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155GUID>;
+    ): Promise<Contracts.IERC1155GUIDTracker>;
     getContractAt(
-      name: "IERC1155Roles",
+      name: "IERC1155RolesTracker",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.IERC1155Roles>;
+    ): Promise<Contracts.IERC1155RolesTracker>;
     getContractAt(
       name: "IERC1155Tracker",
       address: string,
@@ -710,6 +582,26 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.AssocRepo>;
+    getContractAt(
+      name: "IBoolStore",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IBoolStore>;
+    getContractAt(
+      name: "IOpenRepo",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IOpenRepo>;
+    getContractAt(
+      name: "IStringStore",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.IStringStore>;
+    getContractAt(
+      name: "OpenRepoUpgradable",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.OpenRepoUpgradable>;
     getContractAt(
       name: "SoulUpgradable",
       address: string,

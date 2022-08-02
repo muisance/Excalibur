@@ -4,8 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 
-import { ethers } from "hardhat";
-const {  upgrades } = require("hardhat");
+import { ethers,  upgrades } from "hardhat";
 
 // import publicAddr from "./_publicAddrs";
 import contractAddr from "./_contractAddr";
@@ -15,7 +14,8 @@ import contractAddr from "./_contractAddr";
  */
 async function main() {
     //Hub
-    let hubContract = await ethers.getContractFactory("HubUpgradable").then(res => res.attach(contractAddr.hub));
+    let hubContract = await ethers.getContractFactory("HubUpgradable")
+    .then(res => res.attach(contractAddr.hub));
     //Update Implementations
     // await hubContract.upgradeCaseImplementation(contractAddr.case);
     // await hubContract.upgradeJurisdictionImplementation(contractAddr.jurisdiction);

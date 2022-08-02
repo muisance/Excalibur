@@ -4,8 +4,9 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 import { ethers } from "hardhat";
-const {  upgrades } = require("hardhat");
-const hre = require("hardhat");
+import {  upgrades }from "hardhat";
+import * as hre from "hardhat";
+
 const chain = hre.hardhatArguments.network;
 
 //Track Addresses (Fill in present addresses to prevent new deplopyment)

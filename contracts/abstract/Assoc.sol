@@ -11,9 +11,9 @@ import "../interfaces/IAssoc.sol";
  * - Hold, Update & Serve Associations
  */
 abstract contract Assoc is IAssoc {
-    
+
     //--- Storage
-    
+
     //Contract Associations
     mapping(string => address) internal _assoc;
     

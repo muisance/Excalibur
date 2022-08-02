@@ -7,8 +7,8 @@ import "@typechain/hardhat";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 
-require('@openzeppelin/hardhat-upgrades');
-require('hardhat-contract-sizer');
+import '@openzeppelin/hardhat-upgrades';
+import 'hardhat-contract-sizer';
 
 dotenv.config();
 
@@ -25,10 +25,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-// const config: HardhatUserConfig = {
-const config = {
-  
-  // solidity: "0.8.4",
+// const config = {  
+const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
@@ -46,8 +44,9 @@ const config = {
   networks: {
     hardhat: {
     },
-    rinkeby: {
-      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`,
+    boba_mainnet: {
+      // Infura doesn't support Boba Network (yet?)
+      url: "https://mainnet.boba.network/",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
       gas: 2100000,
       gasPrice: 8000000000
@@ -83,8 +82,8 @@ const config = {
     currency: "USD",
   },
   etherscan: {
-    // apiKey: process.env.ETHERSCAN_API_KEY,
     apiKey: {
+      // apiKey: process.env.ETHERSCAN_API_KEY,
       rinkeby: process.env.ETHERSCAN_API_KEY,
     }    
   },

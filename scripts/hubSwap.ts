@@ -4,8 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 
-import { ethers } from "hardhat";
-const {  upgrades } = require("hardhat");
+ import { ethers,  upgrades} from "hardhat";
 
 // import publicAddr from "./_publicAddrs";
 import contractAddr from "./_contractAddr";
