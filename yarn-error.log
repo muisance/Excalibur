@@ -1,0 +1,68 @@
+Arguments: 
+  /home/nekoill/.local/bin/node /usr/bin/yarn install
+
+PATH: 
+  /home/nekoill/yandex-cloud/bin:/home/nekoill/yandex-cloud/bin:/home/nekoill/.local/bin:/home/nekoill/bin:/home/nekoill/.local/bin:/home/nekoill/.gem/ruby/3.0.0/bin:/home/nekoill/.vagrant.d/gems/2.7.6/bin:/usr/bin:/usr/local/bin:/home/nekoill/yandex-cloud/bin:/home/nekoill/yandex-cloud/bin:/home/nekoill/.local/bin:/home/nekoill/bin:/home/nekoill/.local/bin:/home/nekoill/.gem/ruby/3.0.0/bin:/home/nekoill/.vagrant.d/gems/2.7.6/bin:/usr/bin:/usr/local/bin:/home/nekoill/yandex-cloud/bin:/home/nekoill/yandex-cloud/bin:/home/nekoill/.local/bin:/home/nekoill/bin:/home/nekoill/.gem/ruby/3.0.0/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/bin:/usr/local/go/bin:/home/nekoill/bin:/home/nekoill/.fzf/bin:/bin:/usr/local/go/bin:/home/nekoill/bin:/bin:/usr/local/go/bin:/home/nekoill/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/home/nekoill/.cache/yarn/v6/npm-has-flag-4.0.0-944771fd9c81c81265c4d6941860da06bb59479b-integrity/node_modules/has-flag/index.js' -> '/home/nekoill/.projects/BUDS/Excalibur/node_modules/@openzeppelin/hardhat-upgrades/node_modules/has-flag/index.js'
+
+npm manifest: 
+  {
+    "name": "yourjustice-evm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/YourJustice-Live/YourJustice-EVM.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/YourJustice-Live/YourJustice-EVM/issues"
+    },
+    "homepage": "https://github.com/YourJustice-Live/YourJustice-EVM#readme",
+    "devDependencies": {
+      "@nomiclabs/hardhat-ethers": "^2.0.5",
+      "@nomiclabs/hardhat-etherscan": "^3.0.3",
+      "@nomiclabs/hardhat-waffle": "^2.0.3",
+      "@openzeppelin/contracts": "^4.5.0",
+      "@openzeppelin/hardhat-upgrades": "^1.17.0",
+      "@openzeppelin/test-helpers": "^0.5.15",
+      "@types/mocha": "^9.1.0",
+      "chai": "^4.3.6",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.6.0",
+      "hardhat": "^2.9.1",
+      "hardhat-gas-reporter": "^1.0.8",
+      "ts-node": "^10.7.0"
+    },
+    "dependencies": {
+      "@openzeppelin/contracts-upgradeable": "^4.5.2",
+      "@typechain/ethers-v5": "^9.0.0",
+      "@typechain/hardhat": "^5.0.0",
+      "dotenv": "^16.0.0",
+      "hardhat-contract-sizer": "^2.5.1",
+      "solidity-coverage": "^0.7.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

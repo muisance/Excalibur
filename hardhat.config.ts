@@ -44,7 +44,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
     },
-    boba_mainnet: {
+    boba: {
       // Infura doesn't support Boba Network (yet?)
       url: "https://mainnet.boba.network/",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],

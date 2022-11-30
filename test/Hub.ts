@@ -21,7 +21,7 @@ describe("Hub", function () {
 
     before(async function () {
         //Populate Accounts
-        [account1, account2] = await ethers.getSigners();
+        [ account1, account2 ] = await ethers.getSigners();
 
         //Extract Addresses
         this.addr1 = await account1.getAddress();
